@@ -101,6 +101,9 @@ selector('.pizzaInfo--addButton').addEventListener('click', ()=>{
 });
 
 function updateCart() {
+
+  selector('.menu-openner span').innerHTML = cart.length;
+
   if(cart.length > 0) {
     selector('aside').classList.add('show');
     selector('.cart').innerHTML = '';
